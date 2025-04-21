@@ -3,7 +3,7 @@ import './About.css';
 import profileImage from '../assets/images/profile-image.png';
 // Import FontAwesome for icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faMedium, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faMapMarkerAlt, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
