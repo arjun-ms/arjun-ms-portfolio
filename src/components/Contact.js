@@ -30,12 +30,12 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true);
 
-        // Replace these with your own EmailJS service ID, template ID and user ID (public key)
+        // Using environment variables for EmailJS credentials
         emailjs.sendForm(
-            'service_v68nxln', 
-            'template_y5xrfoh', 
+            process.env.REACT_APP_EMAILJS_SERVICE_ID, 
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
             form.current, 
-            'oXE_84wurGYrSf5C8'
+            process.env.REACT_APP_EMAILJS_USER_ID
         )
         .then((result) => {
             setFormStatus({
