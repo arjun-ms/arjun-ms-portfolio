@@ -37,9 +37,7 @@ const About = () => {
                             Hello! I'm Arjun MS, a curious guy who loves to tinker with tech and build products.
                         </p>
                         <p>
-                            I specialize in building scalable applications using React, Node.js, and 
-                            various modern frameworks. My expertise includes building responsive web 
-                            applications and implementing CI/CD pipelines for efficient development workflows.
+                        I'm an AI/ML Developer passionate about building impactful tech products. I've had the opportunity to lead communities like TinkerHub and GTech Mulearn, where I led AI initiatives, developed tools like RAG-based legal search systems, and worked across domains from web development to LLMs. I'm currently exploring innovative product ideas, blending curiosity with hands-on execution—always eager to learn and create.
                         </p>
                         <div className="about-details">
                             <div className="detail-item">
