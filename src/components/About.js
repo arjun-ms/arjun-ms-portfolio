@@ -3,7 +3,7 @@ import './About.css';
 import profileImage from '../assets/images/profile-image.png';
 // Import FontAwesome for icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faMapMarkerAlt, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
@@ -57,6 +57,12 @@ const About = () => {
                             </a>
                             <a href="https://linkedin.com/in/arjun-ms" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                                 <FontAwesomeIcon icon={faLinkedin} />
+                            </a>
+                            <a href="https://medium.com/@arjun-ms" target="_blank" rel="noopener noreferrer" title="Medium">
+                                <FontAwesomeIcon icon={faMedium} />
+                            </a>
+                            <a href="https://x.com/arjun_m_s_" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                <FontAwesomeIcon icon={faTwitter} />
                             </a>
                         </div>
                         <a 

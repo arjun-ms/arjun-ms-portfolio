@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faTwitter, faMedium } from '@fortawesome/free-brands-svg-icons';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
@@ -32,6 +32,9 @@ const Footer = () => {
                             </a>
                             <a href="https://x.com/arjun_m_s_" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                                 <FontAwesomeIcon icon={faTwitter} />
+                            </a>
+                            <a href="https://medium.com/@arjun-ms" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+                                <FontAwesomeIcon icon={faMedium} />
                             </a>
                         </div>
                     </div>

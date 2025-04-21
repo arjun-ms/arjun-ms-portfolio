@@ -7,6 +7,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [activeLink, setActiveLink] = useState('about');
     const location = useLocation();
 
     // Toggle menu function
@@ -35,11 +36,15 @@ const Navbar = () => {
         };
     }, []);
 
+    // Set active link based on current path
+    useEffect(() => {
+        const path = location.pathname.replace('/', '') || 'about';
+        setActiveLink(path);
+    }, [location]);
+
     // Check if a link is active
     const isActive = (path) => {
-        if (path === '/' && location.pathname === '/') return true;
-        if (path !== '/' && location.pathname.includes(path)) return true;
-        return false;
+        return activeLink === path.replace('/', '') || (path === '/' && activeLink === 'about');
     };
 
     return (
